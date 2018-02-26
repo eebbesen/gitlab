@@ -415,4 +415,20 @@ describe Gitlab::Client do
       expect(@users.last.id).to eq(2)
     end
   end
+
+  describe ".events" do
+    it "gets the correct resource" do
+      stub_get("/users/2/events", "user_events")
+      Gitlab.events(2)
+      expect(a_get("/users/2/events")).to have_been_made
+    end
+
+    it "uses options" do
+      d = DateTime.now - 10
+      options = { after: d }
+      stub_get("/users/2/events?after=#{d}", "user_events").with(query: options)
+      Gitlab.events(2, options)
+      expect(a_get("/users/2/events").with(query: options)).to have_been_made
+    end
+  end
 end

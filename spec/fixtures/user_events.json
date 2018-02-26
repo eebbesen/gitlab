@@ -1,0 +1,46 @@
+[{
+    "project_id":122,
+    "action_name":"accepted",
+    "target_id":14068,
+    "target_iid":5464,
+    "target_type":"MergeRequest",
+    "author_id":141,
+    "target_title":"Fixed broken labels on questions/form",
+    "created_at":"2018-02-13T21:43:29.345Z",
+    "author":{
+        "id":141,
+        "name":"Som Body",
+        "username":"sbody",
+        "state":"active",
+        "avatar_url":"https://secure.gravatar.com/avatar/e64c7d89f26bd1972efa854d13d7dd61?s=80\u0026d=identicon",
+        "web_url":"https://gitlab.granicuslabs.com/sbody"
+    },
+    "author_username":"sbody"
+},
+{
+    "project_id":122,
+    "action_name":"pushed to",
+    "target_id":null,
+    "target_iid":null,
+    "target_type":null,
+    "author_id":141,
+    "target_title":null,
+    "created_at":"2018-02-13T19:32:58.437Z",
+    "author":{
+        "id":141,
+        "name":"Some Body",
+        "username":"sbody",
+        "state":"active",
+        "avatar_url":"https://secure.gravatar.com/avatar/e64c7d89f26bd1972efa854d13d7dd61?s=80\u0026d=identicon",
+        "web_url":"https://gitlab.granicuslabs.com/sbody"},
+        "push_data":{
+            "commit_count":1,
+            "action":"pushed",
+            "ref_type":"branch",
+            "commit_from":"4907a4fbd35bbc85d1d36e6e46eebb4c2dc7e1f0",
+            "commit_to":"8ef4515bfea63be025b8161c3295b9ba0ae775a1",
+            "ref":"sbody/mid/long",
+            "commit_title":"awesome code"
+        },
+    "author_username":"sbody"
+}]

@@ -29,6 +29,17 @@ class Gitlab::Client
       id.to_i.zero? ? get("/user") : get("/users/#{id}")
     end
 
+    # Gets events for a user.
+    #
+    # @example
+    #   Gitlab.user(2).events
+    #
+    # @param  [Integer] id The ID of a user.
+    # @return [Gitlab::ObjectifiedHash]
+    def events(id, options={})
+      get("/users/#{id}/events", query: options)
+    end
+
     # Creates a new user.
     # Requires authentication from an admin account.
     #
